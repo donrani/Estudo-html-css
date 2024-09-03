@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebela 004 - Agrupamento em Colgroup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width:500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-weight: bolder;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+        
+        th, td {
+            border:1px solid black;
+            padding:10px;
+        }
+        th {
+            background-color: gray;
+            font-weight: bolder;
+        }
+
+        .cidade {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1> Agrupando Colunas com Colgroup </h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissão">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Son Goku</td>
+            <td>Masculino</td>
+            <td>40 anos</td>
+            <td>Lutador</td>
+        </tr>
+        <tr>
+            <td>Darth Vader</td>
+            <td>Masculino</td>
+            <td>65 anos</td>
+            <td>Chefe de Segurança do Imperador</td>
+        </tr>
+        <tr>
+            <td>Lara Croft</td>
+            <td>Feminino</td>
+            <td>29 anos</td>
+            <td>Paleontóloga</td>
+        </tr>
+        <tr>
+            <td>Wandinha Addams</td>
+            <td>Feminino</td>
+            <td>15 anos</td>
+            <td>Taróloga</td>
+        </tr>
+        <tr>
+            <td>Sarah Connor</td>
+            <td>Feminino</td>
+            <td>33 Anos</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Pedro Bala</td>
+            <td>Masculino</td>
+            <td>37 anos</td>
+            <td>Ativista</td>
+        </tr>
+    </table>
+</body>
+</html>
